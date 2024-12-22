@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import NavBar from "./components/NavBar"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div>
-      Hello
-    </div>
+    <>
+      <div className="fixed top-0 -z-10 h-full w-full">
+        <div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-95 bg-sky-800 "></div>
+      </div>
+      <NavBar />
+
+    </>
   )
 }
 
